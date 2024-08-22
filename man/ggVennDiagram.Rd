@@ -14,6 +14,7 @@ ggVennDiagram(
   label_alpha = 0.5,
   label_geom = c("label", "text"),
   label_color = "black",
+  label_fill = "white",
   label_size = NA,
   label_percent_digit = 0,
   label_txtWidth = 40,
@@ -46,6 +47,8 @@ ggVennDiagram(
 \item{label_geom}{layer of region labels, choose from c("label", "text")}
 
 \item{label_color}{color of region labels ("black")}
+
+\item{label_fill}{fill of region labels ("white")}
 
 \item{label_size}{size of region labels (NA)}
 
