@@ -17,6 +17,7 @@
 #' @param label_geom layer of region labels, choose from c("label", "text")
 #' @param label_alpha set 0 to remove the background of region labels
 #' @param label_color color of region labels ("black")
+#' @param label_fill fill of region labels ("white")
 #' @param label_size size of region labels (NA)
 #' @param label_percent_digit number of digits when formatting percent label (0)
 #' @param label_txtWidth width of text used in showing intersect members, will be ignored unless show_intersection is TRUE (40)
@@ -43,6 +44,7 @@ ggVennDiagram = function(x,
                          label_alpha = 0.5,
                          label_geom = c("label","text"),
                          label_color = "black",
+                         label_fill = "white",
                          label_size = NA,
                          label_percent_digit = 0,
                          label_txtWidth = 40,
@@ -74,6 +76,7 @@ ggVennDiagram = function(x,
               label_alpha=label_alpha,
               label_geom = label_geom,
               label_color = label_color,
+              label_fill = label_fill,
               label_size = label_size,
               label_percent_digit = label_percent_digit,
               label_txtWidth = label_txtWidth,
@@ -113,6 +116,7 @@ plot_venn = function(data,
                      label_geom = "label",
                      label_alpha = 0.5,
                      label_color = "black",
+                     label_fill = "white",
                      label_size = NA,
                      label_percent_digit = 0,
                      label_txtWidth = 40,
@@ -182,6 +186,7 @@ plot_venn = function(data,
       data = region_label,
       alpha = label_alpha,
       color = label_color,
+      fill = label_fill,
       size = label_size,
       lineheight = 0.85,
       label.size = NA

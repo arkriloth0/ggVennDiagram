@@ -13,6 +13,7 @@ plot_venn(
   label_geom = "label",
   label_alpha = 0.5,
   label_color = "black",
+  label_fill = "white",
   label_size = NA,
   label_percent_digit = 0,
   label_txtWidth = 40,
@@ -37,6 +38,8 @@ plot_venn(
 \item{label_alpha}{set 0 to remove the background of region labels}
 
 \item{label_color}{color of region labels ("black")}
+
+\item{label_fill}{fill of region labels ("white")}
 
 \item{label_size}{size of region labels (NA)}
 
